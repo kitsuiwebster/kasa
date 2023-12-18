@@ -1,4 +1,4 @@
-function Works() {
+function Logements() {
     return (
         <div>
             Yo
@@ -6,4 +6,4 @@ function Works() {
     )
 }
 
-export default Works
+export default Logements

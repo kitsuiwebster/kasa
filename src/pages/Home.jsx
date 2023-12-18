@@ -1,10 +1,10 @@
-import Works from "../components/Works"
+import Logements from "../components/Logements"
 
 function Home() {
     return (
         <div>
             <h1>Home</h1>
-            <Works/>
+            <Logements/>
         </div>
     )
 }
