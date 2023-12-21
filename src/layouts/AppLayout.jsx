@@ -1,4 +1,10 @@
-function AppLayout({children}) {
+import Footer from "../components/Footer";
+
+function AppLayout({children, title}) {
+if (title) {
+    document.title = title;
+}
+
     return (
         <>
             <header>
@@ -9,9 +15,7 @@ function AppLayout({children}) {
                 </nav>
             </header>
             {children}
-            <footer>
-                <p>footer</p>
-            </footer>
+            <Footer/>
         </>
         
     )

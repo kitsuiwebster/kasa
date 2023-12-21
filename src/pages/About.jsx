@@ -1,7 +1,12 @@
+import Dropdown from "../components/Dropdown";
+
 function About() {
-    <div>
+    return(
+        <div>
         <h1>À propos</h1>
+        <Dropdown/>
     </div>
+    )
 }
 
 export default About;
