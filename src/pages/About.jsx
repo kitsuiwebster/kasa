@@ -1,7 +1,7 @@
 function About() {
     <div>
-        À propos
+        <h1>À propos</h1>
     </div>
 }
 
-export default About
+export default About;
