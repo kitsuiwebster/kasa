@@ -3,7 +3,7 @@ import Home from "../pages/Home";
 import NotFound from "../pages/NotFound";
 import About from "../pages/About";
 
-const router = createBrowserRouter (
+const router = createBrowserRouter ([
     {
         path: "/",
         element: <Home/>
@@ -16,6 +16,6 @@ const router = createBrowserRouter (
         path: "/*",
         element: <NotFound/>
     }
-)
+])
 
 export default router;
