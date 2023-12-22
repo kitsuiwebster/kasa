@@ -6,6 +6,7 @@
         border-radius: 5px;
         font-size: 22px;
         cursor: pointer;
+        user-select: none;
     }
 
     & > &--content {
@@ -16,7 +17,7 @@
         font-size: 18px;
     }
 
-    & > &--content.dropdown--reduced {
+    & > .dropdown--content.dropdown--reduced {
         display: none;
     }
 
