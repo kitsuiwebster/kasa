@@ -1,4 +1,4 @@
-import Thumb from "../components/Thumb";
+import Thumb from "../components/thumb/index";
 
 function Home() {
     return (

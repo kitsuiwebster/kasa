@@ -1,4 +1,4 @@
-import '../assets/scss/components/Dropdown.scss';
+import './index.scss';
 import {useState} from "react";
 
 function Dropdown({children, title}) {

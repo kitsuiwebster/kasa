@@ -1,6 +1,6 @@
-import Dropdown from "../components/Dropdown";
-import HousingPhoto from "../components/HousingPhoto";
-import Tag from "../components/Tag";
+import Dropdown from "../components/dropdown/index";
+import HousingPhoto from "../components/housing-photo/index";
+import Tag from "../components/tag";
 
 function Housing() {
     return(
