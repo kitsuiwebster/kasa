@@ -1,0 +1,21 @@
+.housing {
+
+    margin: 1rem 5rem 1rem 5rem;
+    
+    &-photo {
+        margin-left: 3rem;
+    }
+
+    &-tags {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+        margin-left: 2.5rem;
+    }
+
+    &-dropdowns {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
