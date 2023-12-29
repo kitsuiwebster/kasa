@@ -1,25 +1,20 @@
-.dropdown {
-    & > &--title {
-        background-color: #FF6060;
-        padding: 14px;
-        color: white;
-        border-radius: 5px;
-        font-size: 22px;
-        cursor: pointer;
-        user-select: none;
-    }
+.thumb {
+    width: 340px;
+    height: 340px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    background-color: #FF6060;
+    margin: 1.5rem;
+    border-radius: 10px;
+    // background: linear-gradient(to bottom, #FFFFFF 0%, #000000 50%);
 
-    & > &--content {
-        padding: 15px;
-        background-color: #F6F6F6;
-        color: #FF6060;
-        border-radius: 10px;
-        font-size: 18px;
-    }
+    &-title {
+        height: 40px;
 
-    & > .dropdown--content.dropdown--reduced {
-        display: none;
+        &-text {
+            margin: 0;
+            font-size: 18px;
+        }
     }
-
-    padding: 1rem 13rem 1rem 13rem;
 }
