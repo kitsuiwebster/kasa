@@ -1,25 +1,12 @@
-.dropdown {
-    & > &--title {
-        background-color: #FF6060;
-        padding: 14px;
+.tag {
+    background-color: #FF6060;
+    border-radius: 10px;
+    padding: 0.3rem 1.7rem 0.3rem 1.7rem;
+    margin: 0.5rem;
+    
+    &-text {
         color: white;
-        border-radius: 5px;
-        font-size: 22px;
-        cursor: pointer;
-        user-select: none;
+        text-decoration: none;
+        font-size: 14px;
     }
-
-    & > &--content {
-        padding: 15px;
-        background-color: #F6F6F6;
-        color: #FF6060;
-        border-radius: 10px;
-        font-size: 18px;
-    }
-
-    & > .dropdown--content.dropdown--reduced {
-        display: none;
-    }
-
-    padding: 1rem 13rem 1rem 13rem;
 }

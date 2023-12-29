@@ -1,7 +1,9 @@
-function Tag() {
+import './index.scss';
+
+function Tag({ tagName }) {
     return(
-        <div>
-            <a href="/">Tag name</a>
+        <div className="tag">
+            <a className='tag-text' href="/">{tagName}</a>
         </div>
     )
 }
