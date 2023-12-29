@@ -1,8 +1,11 @@
+import './index.scss';
+
 function Footer() {
     return(
-        <div>
+        <footer className="footer">
+            <img alt="Kasa"></img>
             <p>© 2020 Kasa, All rights reserved</p>
-        </div>
+        </footer>
     )
 }
 
