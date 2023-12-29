@@ -1,0 +1,39 @@
+.home {
+    margin: 3rem 5rem 3rem 5rem;
+
+    &-slogan {
+        color: white;
+        background-image: url('../../assets/images/slogan-photo.png');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        padding: 3rem 5rem 3rem 5rem;
+        font-size: 30px;
+        text-align: center;
+        font-weight: 500;
+        position: relative;
+        z-index: 1;
+        border-radius: 10px;
+        &:after {
+            content: "";
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background: rgba(0, 0, 0, 0.5);
+            z-index: -1;
+            font-size: 30px;
+            text-align: center;
+            font-weight: 500;
+            border-radius: 10px;
+        }
+    }
+
+    &-thumbs {
+        padding: 1.5rem;
+        background-color: rgb(236, 236, 236);
+        margin-top: 3rem;
+        border-radius: 10px;
+    }
+}
