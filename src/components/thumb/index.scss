@@ -3,18 +3,17 @@
     height: 340px;
     display: flex;
     flex-direction: column;
-    justify-content: end;
-    background-color: #FF6060;
+    justify-content: flex-end;
+    // background-color: rgb(255, 96, 96);
     margin: 1.5rem;
     border-radius: 10px;
-    // background: linear-gradient(to bottom, #FFFFFF 0%, #000000 50%);
+    border-radius: 0.625rem;
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.00) 0%, rgba(0, 0, 0, 0.50) 100%);
+
 
     &-title {
         height: 40px;
-
-        &-text {
-            margin: 0;
-            font-size: 18px;
-        }
+        margin: 0;
+        font-size: 18px;
     }
 }

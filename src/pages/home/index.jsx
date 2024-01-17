@@ -1,5 +1,6 @@
-import Thumb from "../../components/thumb/index";
+import HousingThumb from "../../components/thumb/index";
 import './index.scss';
+import logements from '../../logements.json'
 
 function Home() {
     return (
@@ -8,12 +9,12 @@ function Home() {
                 Chez vous, partout et ailleurs
             </div>
             <div className="home-thumbs">
-                <Thumb/>
-                <Thumb/>
-                <Thumb/>
-                <Thumb/>
-                <Thumb/>
-                <Thumb/>
+                {
+                    logements.map((logement) => {
+                            return <HousingThumb key={logement.id} logement={logement}/>;
+
+                    })
+                }
             </div>
         </div>
     )

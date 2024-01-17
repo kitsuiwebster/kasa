@@ -9,9 +9,12 @@ function Dropdown({children, title}) {
     }
 
     return(
-        <div className={`dropdown`} onClick={toggle}>
-            <div className={'dropdown--title'}>
-                {title}
+        <div className={`dropdown`}>
+            <div className={'dropdown--container'}>
+                <div className='dropdown--title'>{title}</div>
+                <div className='dropdown--arrow' onClick={toggle}>
+
+                </div>
             </div>
             <div className={`dropdown--content ${open ? "" : "dropdown--reduced"}`}>
                 {children}

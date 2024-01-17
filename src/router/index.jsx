@@ -20,7 +20,7 @@ const router = createBrowserRouter ([
             </AppLayout>
     },
     {
-        path: "/housing",
+        path: "/housing/:id",
         element: <AppLayout title="Logements">
             <Housing/>
             </AppLayout>

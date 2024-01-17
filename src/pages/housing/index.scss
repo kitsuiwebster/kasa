@@ -2,8 +2,19 @@
 
     margin: 1rem 5rem 1rem 5rem;
     
-    &-photo {
+    &-photo, &-title, &-location {
         margin-left: 3rem;
+    }
+
+    &-title, &-location {
+        color: #FF6060;
+    }
+
+    &-title {
+        font-weight: 400;
+        font-size: 35px;
+        margin-top: 1rem;
+        margin-bottom: 1rem;
     }
 
     &-tags {

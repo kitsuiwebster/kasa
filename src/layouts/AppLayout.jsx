@@ -1,4 +1,5 @@
 import Footer from "../components/footer/index";
+import "./index.scss"
 
 function AppLayout({children, title}) {
 if (title) {
@@ -7,9 +8,9 @@ if (title) {
 
     return (
         <>
-            <header>
-                <h1>Kasa</h1>
-                <nav>
+            <header className="layout">
+                <img src={require("../assets/images/logo-home.svg").default} alt="Kasa"></img>
+                <nav className="layout--nav">
                     <a href="/">Accueil</a>
                     <a href="/about">À Propos</a>
                 </nav>
