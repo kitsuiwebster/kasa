@@ -28,11 +28,11 @@ import './index.scss';
 
 function HousingThumb({logement}) {
     return(
-        <div className="thumb" style={{ backgroundImage: `url(${logement.cover})` }}>
-            <Link to ={`/housing/${logement.id}`} className="thumb-link">
-                <h2 className="thumb-link-title">{logement.title}</h2>
-            </Link>
-        </div>
+        <Link to ={`/housing/${logement.id}`} className="thumb">
+            <div className="thumb-container" style={{ backgroundImage: `url(${logement.cover})` }}>
+                <h2 className="thumb-container-title">{logement.title}</h2>
+            </div>
+        </Link>
     )
 }
 
