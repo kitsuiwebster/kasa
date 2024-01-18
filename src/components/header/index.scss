@@ -1,0 +1,25 @@
+.header {
+    margin: 3rem 5rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+
+    &--nav {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+
+        a {
+            color: #FF6060;
+            font-size: 25px;
+            font-weight: 410;
+            padding: 0 2rem;
+            text-decoration: none;
+
+            &:hover {
+                cursor: pointer;
+                text-decoration: underline;
+            }
+        }
+    }
+}
