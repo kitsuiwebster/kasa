@@ -1,0 +1,36 @@
+.not-found-container {
+    background-color: #FFFFFF;
+    color: #FF6060;
+    text-align: center;
+    padding: 0 2rem 4rem 2rem;
+    border-radius: 10px;
+    max-width: 1000px;   
+    margin:auto;
+    min-height: 30vh;
+
+    h1 {
+        font-size: 30rem;
+        margin-bottom: 20px;
+        margin-top: 0;
+    }
+
+    p {
+        font-size: 18px;
+        margin-bottom: 30px;
+    }
+
+    a {
+        color: #FF6060;
+        text-decoration: none;
+        font-weight: bold;
+        padding: 10px 20px;
+        border: 2px solid #FF6060;
+        border-radius: 5px;
+        transition: background-color 0.3s, color 0.3s;
+
+        &:hover {
+            background-color: #FF6060;
+            color: #FFFFFF;
+        }
+    }
+}
