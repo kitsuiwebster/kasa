@@ -5,14 +5,6 @@ import { useParams } from "react-router-dom";
 
 function Home() {
 
-    const { id: idParams } = useParams();
-
-    /**
-     * @var {Logement} logement
-     */
-
-    const logement = logements.find((logement) => logement.id === idParams)
-
     return (
         <div className="home">
             <div className="home-slogan">
