@@ -3,7 +3,7 @@ import './index.scss';
 function Tag({ tagName }) {
     return(
         <div className="tag">
-            <a className='tag-text' href="/">{tagName}</a>
+            <p className='tag-text'>{tagName}</p>
         </div>
     )
 }
