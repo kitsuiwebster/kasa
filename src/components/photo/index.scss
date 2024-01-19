@@ -1,6 +1,12 @@
 .photo {
+    display: flex;  
+    flex-direction: column;
+    align-items: center;
 
     &-file {
         width: 100%;
+        border-radius: 30px;
+        height: 25rem;
+        object-fit: cover;
     }
 }

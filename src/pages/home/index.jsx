@@ -1,7 +1,6 @@
 import HousingThumb from "../../components/thumb/index";
 import './index.scss';
 import logements from '../../logements.json'
-import { useParams } from "react-router-dom";
 
 function Home() {
 
