@@ -1,4 +1,10 @@
 .dropdown {
+    display: grid;
+    grid-template-rows: auto minmax(0, 1fr); 
+    gap: 0; 
+    padding: 1rem 0 1rem 3rem;
+    width: 100%;
+
     &--container {
         background-color: #FF6060;
         color: white;
@@ -8,6 +14,7 @@
         display: flex;
         flex-direction: row;
         justify-content: space-between;
+        cursor: pointer;
     }
 
     &--title {
@@ -22,10 +29,11 @@
         height: 20px;
         margin-top: 0.2rem;
         padding: 14px;
+        transition: transform 200ms ease-in-out;
+    }
 
-        &:hover {
-            cursor: pointer;
-        }
+    &--arrow-rotated {
+        transform: rotate(180deg);
     }
 
     &--content {
@@ -34,15 +42,12 @@
         color: #FF6060;
         border-radius: 10px;
         font-size: 18px;
-        transition: max-height 1s ease-in-out;
         overflow: hidden;
-        max-height: 300px;
+        max-height: 0; 
+        transition: max-height 0.5s ease-out; 
     }
 
-    & > .dropdown--content.dropdown--reduced {
-        display: none;
+    &--open {
+        max-height: 300px; 
     }
-
-    padding: 1rem 3rem 1rem 3rem;
-    width: 100%;
 }
