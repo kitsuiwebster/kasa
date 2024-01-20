@@ -1,0 +1,14 @@
+.star-rating {
+    
+    display: flex;
+    justify-content: flex-end;
+
+    .star {
+        color: #e3e3e3; // Color for empty star
+        margin: 0 2px;
+        font-size: 2rem;
+    }
+    .filled {
+        color: #ff6060; // Color for filled star
+    }
+}

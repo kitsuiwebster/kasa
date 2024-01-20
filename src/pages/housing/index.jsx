@@ -4,6 +4,8 @@ import Tag from "../../components/tag";
 import './index.scss';
 import { useParams } from "react-router-dom";
 import logements from '../../logements.json'
+import HostProfile from "../../components/host-profile/index";
+import StarRating from "../../components/rating/index";
 
 function Housing() {
     const { id: idParams } = useParams();
@@ -19,26 +21,34 @@ function Housing() {
             <div className="housing-photo">
                 <Photo
                 title="Housing Photo Kasa"
-                imageSrc={logement.cover}/>
+                imageSrcs={logement.pictures}/>
             </div>
-            <h2 className="housing-title">
-                {
-                    logement.title
-                }
-            </h2>
-            <p className="housing-location">
-                {
-                    logement.location
-                }
-            </p>
-            <div className="housing-tags">
-                {
-                    logement.tags.map((tag) => (
-                        <Tag
-                            key={tag}
-                            tagName={tag}/>
-                    ))
-                }
+            <div className="housing-infos">
+                <div>
+                    <h2 className="housing-title">
+                        {
+                            logement.title
+                        }
+                    </h2>
+                    <p className="housing-location">
+                        {
+                            logement.location
+                        }
+                    </p>
+                    <div className="housing-tags">
+                        {
+                            logement.tags.map((tag) => (
+                                <Tag
+                                    key={tag}
+                                    tagName={tag}/>
+                            ))
+                        }
+                    </div>
+                </div>
+                <div>
+                        <HostProfile name={logement.host.name} picture={logement.host.picture} />
+                        <StarRating rating={parseInt(logement.rating)} />
+                </div>
             </div>
             <div className="housing-dropdowns">
                 <Dropdown

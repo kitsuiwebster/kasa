@@ -1,0 +1,19 @@
+.host-profile {
+
+    display: flex;
+    align-items: center;
+    margin: 1rem 0;
+
+    &-picture {
+        width: 5rem;
+        height: 5rem;
+        border-radius: 50%;
+        object-fit: cover;
+        margin-right: 10px;
+    }
+    &-name {
+        font-size: 25px;
+        color: #ff6060;
+        margin-right: 2rem;
+    }
+}
