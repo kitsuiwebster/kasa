@@ -1,12 +1,46 @@
 .photo {
-    display: flex;  
-    flex-direction: column;
+    display: flex;
+    flex-direction: row;
     align-items: center;
+    position: relative;
+    overflow: hidden;
+    border-radius: 30px;
 
     &-file {
         width: 100%;
-        border-radius: 30px;
         height: 25rem;
         object-fit: cover;
+    }
+
+    &-button {
+        background-color: rgba(0, 0, 0, 0.5);
+        color: white;
+        border: none;
+        padding: 0;
+        cursor: pointer;
+        position: absolute;
+        top: 50%;
+        font-size: 24px;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: background-color 0.3s ease, transform 0.3s ease;
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+
+        &:hover {
+            background-color: rgba(0, 0, 0, 0.7);
+            transform: scale(1.1);
+        }
+
+        &-prev {
+            left: 20px;
+        }
+
+        &-next {
+            right: 20px;
+        }
     }
 }
