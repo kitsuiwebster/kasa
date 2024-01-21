@@ -1,4 +1,5 @@
 import './index.scss';
+import '../../assets/scss/index.scss'
 
 function NotFound() {
     return(

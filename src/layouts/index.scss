@@ -22,4 +22,16 @@
             }
         }
     }
+
+    &-container {
+        display: flex;
+        min-height: 100vh;
+        flex-direction: column;
+    }
+
+    &-main {
+        flex: 1;
+        margin: 0 3rem;
+    }
 }
+

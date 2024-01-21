@@ -8,8 +8,8 @@ function Header() {
                 <img src={require("../../assets/images/logo-home.svg").default} alt="Kasa" />
             </Link>
             <nav className="header--nav">
-                <a href="/">Accueil</a>
-                <a href="/about">À Propos</a>
+                <a className='header--titles' href="/">Accueil</a>
+                <a className='header--titles' href="/about">À Propos</a>
             </nav>
         </header>
     );

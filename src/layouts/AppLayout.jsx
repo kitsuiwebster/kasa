@@ -9,9 +9,13 @@ if (title) {
 
     return (
         <>
-            <Header/>
-            {children}
-            <Footer/>
+            <div className="layout-container">
+                <Header/>
+                    <div className="layout-main">
+                        {children}
+                    </div>
+                <Footer/>
+            </div>
         </>
         
     )

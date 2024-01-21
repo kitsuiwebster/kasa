@@ -1,5 +1,6 @@
 import Dropdown from "../../components/dropdown/index";
 import './index.scss';
+import '../../assets/scss/index.scss'
 
 function About() {
     return(
@@ -10,7 +11,7 @@ function About() {
                 <div id="about-dropdowns">
                     <Dropdown title="Fiabilité">
                         <p>
-                            Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont réfulièrement vérifiées par nos équipes.
+                            Les annonces postées sur Kasa garantissent une fiabilité totale. Les photos sont conformes aux logements, et toutes les informations sont régulièrement vérifiées par nos équipes.
                         </p>
                     </Dropdown>
                     <Dropdown title="Respect">
